@@ -3,7 +3,7 @@ module Opticon
   class Opticon
     attr_reader :records
 
-    def initialize  records
+    def initialize records
       @records = records
     end
 
@@ -38,7 +38,6 @@ module Opticon
   class Parser
 
     def initialize
-      @docs      = []
       @records   = []
     end
 
