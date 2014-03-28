@@ -13,6 +13,10 @@ module Opticon
       [b, e]
     end
 
+    def beg_end_list
+      
+    end
+
     def doc_count
       @records.select{|r| r[:break]}.length
     end

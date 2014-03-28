@@ -39,6 +39,20 @@ describe Opticon do
       @opt.to_s.length.should eq 1122
     end
 
+    it 'returns a beg-end list' do
+      pending
+      @opt.beg_end_list.should eq 'foo'
+    end
+
+    it 'returns an Ipro lfp' do
+      pending
+    end
+
+    it 'returns a Summation dii' do
+      pending
+    end
+
+
   end
 
 end
