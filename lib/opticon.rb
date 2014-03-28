@@ -33,6 +33,11 @@ module Opticon
       @records.map{|r| r[:volume]}.uniq
     end
 
+    def to_s
+      l = @records.map{|r| r.values.join ','}
+      l.join("\r\n") << "\r\n"
+    end
+
   end
 
   class Parser

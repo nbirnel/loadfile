@@ -35,6 +35,10 @@ describe Opticon do
       @opt.volumes.should eq ["SAMPLE_VOLUME_001", "SAMPLE_VOLUME_002"]
     end
 
+    it 'prints itself' do
+      @opt.to_s.length.should eq 1122
+    end
+
   end
 
 end
