@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.date        = '2014-03-27'
   s.required_ruby_version = '>=1.9.2'
   s.summary     = "manipulate opticon loadfiles"
-  s.description = ""
+  s.description = "A ruby gem to manipulate .opt and .log files for Concordance® / Opticon® This software is not made or endorsed by Lexis-Nexis® or Dataflight®."
   s.authors     = ['Noah Birnel']
   s.email       = 'nbirnel@gmail.com'
   s.homepage    = 'http://github.com/nbirnel/opticon'
