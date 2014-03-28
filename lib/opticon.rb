@@ -2,13 +2,13 @@ class Opticon
   attr_reader :docs, :records
 
   def initialize input
-    docs = []
-    doc = []
-    records = []
-    record = {}
+    docs      = []
+    c_doc     = []
+    records   = []
+    c_record  = {}
     while line = input.gets
       l = line.chomp.split(',')
-      record = {
+      c_record = {
         :key    => l[0],
         :volume => l[1],
         :path   => l[2],
@@ -17,22 +17,22 @@ class Opticon
         :empty2 => l[5],
         :pages  => l[6],
       }
-      if record[:break]
-        docs.push doc if doc != []
-        doc = []
+      if c_record[:break]
+        docs.push c_doc if c_doc != []
+        c_doc = []
       end
-      doc.push record
-      records.push record
+      c_doc.push   c_record
+      records.push c_record
     end
-    doc.push record
-    docs.push doc if doc != []
+    c_doc.push c_record
+    docs.push c_doc if c_doc != []
     @records = records
     @docs = docs
   end
 
   def beg_end
-    b = @docs[0][0][:key]
-    e = @docs[-1][-1][:key]
+    b = @records[0][:key]
+    e = @records[-1][:key]
     [b, e]
   end
 
