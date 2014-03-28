@@ -7,7 +7,6 @@ class Opticon
     records = []
     record = {}
     while line = input.gets
-      record = Hash.new nil
       l = line.chomp.split(',')
       record = {
         :key    => l[0],
