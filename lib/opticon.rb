@@ -21,10 +21,10 @@ class Opticon
         docs.push c_doc if c_doc != []
         c_doc = []
       end
-      c_doc.push   c_record
+      c_doc.push   c_record[:key]
       records.push c_record
     end
-    c_doc.push c_record
+    c_doc.push c_record[:key]
     docs.push c_doc if c_doc != []
     @records = records
     @docs = docs
