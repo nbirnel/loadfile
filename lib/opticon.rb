@@ -2,10 +2,8 @@ class Opticon
   attr_reader :docs, :records
 
   def initialize input
-    docs = []
-    doc = []
-    records = []
-    record = {}
+    docs = records = []
+    doc  = record  = []
     while line = input.gets
       l = line.chomp.split(',')
       record = {
