@@ -18,7 +18,7 @@ or, if you want the latest and the greatest,
 
 Runtime Requirements
 ---------
-ruby >= 1.9.2
+ruby >= 1.8.7
 
 Build Requirements
 ---------
