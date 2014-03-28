@@ -5,7 +5,6 @@ class Opticon
     docs      = []
     c_doc     = []
     records   = []
-    c_record  = {}
     while line = input.gets
       l = line.chomp.split(',')
       c_record = {
