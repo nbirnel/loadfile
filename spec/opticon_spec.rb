@@ -52,7 +52,6 @@ describe Opticon do
       pending
     end
 
-
   end
 
 end
