@@ -1,6 +1,8 @@
+require  "#{File.dirname(__FILE__)}/lib/loadfile/version"
+
 Gem::Specification.new do |s|
   s.name        = 'loadfile'
-  s.version     = '0.0.1'
+  s.version     = Loadfile::VERSION
   s.date        = '2014-03-28'
   s.required_ruby_version = '>=1.8.7'
   s.summary     = "manipulate electronic evidence discovery loadfiles"
@@ -16,6 +18,7 @@ Gem::Specification.new do |s|
     'README.md',
     'loadfile.gemspec',
     'lib/loadfile.rb',
+    'lib/loadfile/version.rb',
     'lib/opticon/opticon.rb',
     'lib/opticon/opt_parser.rb',
     'spec/loadfile_spec.rb'

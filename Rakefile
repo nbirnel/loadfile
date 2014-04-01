@@ -1,8 +1,9 @@
 require 'rspec/core/rake_task'
 require 'rake/clean'
+load 'lib/loadfile/version.rb'
 RSpec::Core::RakeTask.new('spec')
 
-VER  = '0.0.1'
+VER  = Loadfile::VERSION
 PROG = 'loadfile'
 NAME = 'loadfile'
 LIB  = FileList['lib/*.rb', 'lib/*/*.rb']
