@@ -26,3 +26,4 @@ Gem::Specification.new do |s|
   s.has_rdoc    = true
   s.license     = 'MIT'
 end
+

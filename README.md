@@ -1,8 +1,10 @@
 loadfile
 ---------
-A ruby gem to manipulate .opt and .log files
-for Concordance® / Opticon®.
-This software is not made or endorsed by Lexis-Nexis® or Dataflight®.
+A ruby gem to manipulate
+.opt and .log files for Concordance® / Opticon®,
+.lfp files for Ipro eCap,
+and .dii files for Summation®.
+This software is not made or endorsed by Ipro®, Lexis-Nexis® or Dataflight®."
 
 Installation
 ---------
