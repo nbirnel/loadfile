@@ -1,4 +1,4 @@
-opticon
+loadfile
 ---------
 A ruby gem to manipulate .opt and .log files
 for Concordance® / Opticon®.
@@ -6,12 +6,12 @@ This software is not made or endorsed by Lexis-Nexis® or Dataflight®.
 
 Installation
 ---------
-`gem install opticon`
+`gem install loadfile`
 
 or, if you want the latest and the greatest, 
 
-    git clone https://github.com/opticon
-    cd opticon
+    git clone https://github.com/loadfile
+    cd loadfile
     rake install
 
 (use `sudo` as necessary)
@@ -35,5 +35,5 @@ License
 © 2014 Noah Birnel
 MIT license
 
-[![Build Status](https://travis-ci.org/nbirnel/opticon.png?branch=master)](https://travis-ci.org/nbirnel/opticon)
-[![Code Climate](https://codeclimate.com/github/nbirnel/opticon.png)](https://codeclimate.com/github/nbirnel/opticon)
+[![Build Status](https://travis-ci.org/nbirnel/loadfile.png?branch=master)](https://travis-ci.org/nbirnel/loadfile)
+[![Code Climate](https://codeclimate.com/github/nbirnel/loadfile.png)](https://codeclimate.com/github/nbirnel/loadfile)

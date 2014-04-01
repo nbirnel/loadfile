@@ -1,11 +1,11 @@
-require  "#{File.dirname(__FILE__)}/../lib/opticon"
+require  "#{File.dirname(__FILE__)}/../lib/loadfile"
 
-describe Opticon do
+describe Loadfile do
 
-  describe Opticon::Opticon do
+  describe Loadfile::Opticon do
 
     before do
-      @parser = Opticon::Parser.new
+      @parser = Loadfile::OptParser.new
       @sample = "#{File.dirname(__FILE__)}/../sample/sample.opt"
       @io = File.new(@sample,'r')
       @opt = @parser.parse @io

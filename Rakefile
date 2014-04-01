@@ -3,9 +3,9 @@ require 'rake/clean'
 RSpec::Core::RakeTask.new('spec')
 
 VER  = '0.0.1'
-PROG = 'opticon'
-NAME = 'opticon'
-LIB  = FileList['lib/*.rb']
+PROG = 'loadfile'
+NAME = 'loadfile'
+LIB  = FileList['lib/*.rb', 'lib/*/*.rb']
 BIN  = FileList['bin/*.rb']
 TEST = FileList['spec/*.rb']
 README = FileList['README.md']
