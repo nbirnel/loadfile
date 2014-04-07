@@ -10,7 +10,8 @@ module Loadfile
     # Create a new parser for Opticon
 
     def initialize
-      @records   = []
+      @docs = []
+      @doc = []
     end
 
     ##
@@ -30,11 +31,19 @@ module Loadfile
           :empty2 => l[5],
           :pages  => l[6],
         }
-        @records.push c_record
+        new_doc if c_record[:break] && $. >1
+        @doc.push c_record
       end
-      Loadfile::Opticon.new @records
+      @docs.push @doc
+      Loadfile::Opticon.new @docs
     end
 
+    private
+
+    def new_doc
+      @docs.push @doc
+      @doc = []
+    end
   end
 
 end
