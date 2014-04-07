@@ -32,7 +32,7 @@ module Loadfile
         }
         @records.push c_record
       end
-      Loadfile::Opticon.new  @records
+      Loadfile::Opticon.new @records
     end
 
   end
