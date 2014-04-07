@@ -34,6 +34,7 @@ module Loadfile
         new_doc if c_record[:break] && $. >1
         @doc.push c_record
       end
+      #sloppy
       @docs.push @doc
       Loadfile::Opticon.new @docs
     end
